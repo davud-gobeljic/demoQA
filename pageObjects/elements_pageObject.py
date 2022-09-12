@@ -13,6 +13,7 @@ class Elements():
     permanentAdress_id = 'permanentAddress'
     submitBTN_id = 'submit'
 
+
     def __init__(self, driver):
         self.driver = driver
 
@@ -36,3 +37,4 @@ class Elements():
 
     def submitBTN_click(self):
         self.driver.find_element(By.ID, self.submitBTN_id).click()
+

@@ -48,6 +48,8 @@ class Test_002_elements_textbox():
         if self.email in logEmail:
             assert True
             self.driver.close()
+            self.log.info('************* Elements test is PASSED *************')
+            self.log.info('- - - - - - - - - -')
         else:
             self.driver.save_screenshot(os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                                      r'/Screenshoots/Test_002_Elements_TextBox',
